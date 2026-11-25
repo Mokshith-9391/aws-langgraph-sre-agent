@@ -1,0 +1,7 @@
+project_name = "aws-sre-agent"
+aws_region  = "us-east-1"
+
+# IMPORTANT: replace these examples with exact model/inference-profile and log-group ARNs.
+# Do not deploy production with wildcard resource permissions.
+allowed_bedrock_model_arns = ["*"]
+allowed_log_group_arns = ["arn:aws:logs:us-east-1:123456789012:log-group:/aws/ecs/my-service:*"]

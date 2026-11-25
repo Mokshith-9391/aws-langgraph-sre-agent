@@ -1,0 +1,33 @@
+AWS LangGraph SRE Agent package
+
+.env.example
+.github/workflows/ci.yml
+.gitignore
+Dockerfile
+LICENSE
+README.md
+docs/ARCHITECTURE.md
+docs/DEPLOYMENT_GUIDE.md
+docs/RUNBOOKS.md
+docs/SECURITY.md
+docs/TESTING_OPERATIONS.md
+examples/incident_payload.json
+pyproject.toml
+src/sre_agent/__init__.py
+src/sre_agent/agentcore_app.py
+src/sre_agent/approval.py
+src/sre_agent/config.py
+src/sre_agent/graph.py
+src/sre_agent/llm.py
+src/sre_agent/main.py
+src/sre_agent/state.py
+src/sre_agent/tools.py
+terraform/main.tf
+terraform/outputs.tf
+terraform/terraform.tfvars.example
+terraform/variables.tf
+terraform/versions.tf
+tests/test_approval.py
+tests/test_tools.py
+
+Additional: examples/incident_payload.json, docs/*.md, .github/workflows/ci.yml

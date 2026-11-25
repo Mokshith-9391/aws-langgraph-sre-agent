@@ -1,0 +1,16 @@
+{
+  "prompt": "Investigate elevated CPU and intermittent 5xx responses for the checkout service. Identify likely causes and recommend safe remediation.",
+  "session_id": "demo-incident-001",
+  "context": {
+    "alarm_name": "CheckoutHighCPU",
+    "namespace": "AWS/ECS",
+    "metric_name": "CPUUtilization",
+    "dimensions": {
+      "ClusterName": "production",
+      "ServiceName": "checkout"
+    },
+    "log_group": "/aws/ecs/checkout",
+    "logs_query": "fields @timestamp, @message | filter @message like /ERROR|timeout/ | sort @timestamp desc | limit 50",
+    "lookback_minutes": 60
+  }
+}
